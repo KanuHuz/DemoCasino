@@ -26,6 +26,10 @@ only one functionality at the time.
 Secondly, as it was initially understood, an e2e test case was implemented considering a very common situation involving an user flow that consists of users trying to play a game were the authentication process is needed.
 Assertions to control for the correct scenario are present for both situations.
 
+# Testing insights
+Sometimes upon numerous login tries, a captcha will appear and the test will fail assertion step. Please test around it accordingly.
+To re-test the registration test and work around the email alert, the user email in the fixture has to be changed on each try.
+
 # Final considerations
 A more robust framework can be produced by the addition of Cucumber BDD and a reporting tool like mochawesome but their inclusion was way
 beyond the scope of the solicited work.
